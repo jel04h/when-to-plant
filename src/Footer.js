@@ -7,7 +7,7 @@ const Footer = (props) => {
   return (
     <footer>
       <hr />
-      <p>Joan Williams 2017</p>
+      <p>&copy; Joan Williams 2017 - When to Plant</p>
     </footer>
   )
 }

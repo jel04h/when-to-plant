@@ -1,0 +1,57 @@
+ul.calendar li {
+  display: inline-block;
+  width: 20%;
+  margin: 2%;
+  background: #DDDDDD;
+  text-align: center;
+}
+
+div.strap-calendar {
+  margin-top: 25px;
+}
+
+div.xx:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "\2717";
+    font-size: 190px; 
+    color: red;
+    text-align: center;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+div.check:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    content: "\2713";
+    font-size: 190px; 
+    color: green;
+    text-align: center;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+.thePlantNameHeading {
+  background-color: yellow;
+  padding: 0 8px 0 8px;
+  font-weight: bold;
+}
+
+div.well.weatherbox {
+  background-color: #F2F2F2 !important;
+  background-image: none;
+  height: 285px;
+}
+
+img.weather-icon {
+  max-width: 80px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
