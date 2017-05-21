@@ -21,3 +21,8 @@ ul.plantul li:hover {
   background-color: #337ab7;
   color: white;
 }
+
+p.xsmall {
+  font-size: 11px;
+  color: #808080;
+}

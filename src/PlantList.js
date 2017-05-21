@@ -1,24 +1,31 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import PropTypes from 'prop-types'
 import './PlantList.css'
 
-const PlantList = (props) => {
-  return (
-    <div className='plant-list'>
-      <h1>Plant List</h1>
-      <p>The list of plants</p>
-      <ul className='plantul'>
-        <a href='#'><li>Tomato</li></a>
-        <a href='#'><li>Peppers</li></a>
-        <a href='#'><li>Radish</li></a>
-        <a href='#'><li>Green Onions</li></a>
-        <a href='#'><li>Basil</li></a>
-        <a href='#'><li>Oregano</li></a>
-        <a href='#'><li>Peppermint</li></a>
-      </ul>
-    </div>
-  )
+class PlantList extends React.Component {
+  render () {
+    const { plants } = this.props
+    return (
+      <div className='plant-list'>
+        <h1>Plant List</h1>
+        <p>The list of plants</p>
+        <ul className='plantul'>
+          {Object.keys(plants).map(key => {
+            const plant = plants[key]
+            return <li key={key}>
+              <Link to={`plants/${plant.name}`}>{plant.name}</Link>
+              <p className='xsmall'>{plant.family}</p>
+            </li>
+          })}
+        </ul>
+      </div>
+    )
+  }
+}
+
+PlantList.propTypes = {
+  plants: PropTypes.object.isRequired
 }
 
 export default PlantList

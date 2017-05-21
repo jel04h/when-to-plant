@@ -15,12 +15,12 @@ const Header = (props) => {
               <span className='icon-bar'></span>
               <span className='icon-bar'></span>
             </button>
-            <a className='navbar-brand' href='/'>What to Plant</a>
+            <a className='navbar-brand' href='/'>When to Plant</a>
           </div>
 
           <div className='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
             <ul className='nav navbar-nav'>
-              <li><a href='/plantlist'>Plant Lists<span className='sr-only'>(current)</span></a></li>
+              <li><a href='/plants'>Plant Lists<span className='sr-only'>(current)</span></a></li>
               <li><a href='/weathercal'>Current Calendar Weather</a></li>
               <li><a href='/plants/tomato'>Tomato</a></li>
             </ul>
